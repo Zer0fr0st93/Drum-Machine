@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fc5c65;
+  font-family: "Righteous", cursive;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.display {
+  background-color: #d1d8e0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 400px;
+}
+
+.display h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.drum-pad {
+  border: 2px solid #333;
+  border-radius: 4px;
+  background-color: #fc5c65;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #d1d8e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.drum-pad.active {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
